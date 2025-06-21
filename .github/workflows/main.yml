@@ -6,7 +6,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.HUGO_PAT }}
+          token: ${{ secrets.BUB_BUB_DEPLOY }}
           path: main
           submodules: true
           fetch-depth: 0
