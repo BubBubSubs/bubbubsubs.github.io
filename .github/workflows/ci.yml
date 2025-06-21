@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: Build local ./exampleSite
-        run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://zjedi.github.io/hugo-scroll/
+        run: hugo --minify --gc --destination ./public --source . --themesDir ./themes --baseURL https://bubbubsubs.com
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push'
