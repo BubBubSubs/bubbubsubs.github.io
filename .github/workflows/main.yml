@@ -18,12 +18,12 @@ jobs:
       - name: Build
         run: |
           cd main
-          hugo mod init github.com/nulvox/gohugo-theme-ananke
+          hugo mod init hugo-scroll
           hugo --minify
       - name: Checkout pages
         uses: actions/checkout@v4
         with:
-          repository: brokengadgets/brokengadgets.github.io
+          repository: github.com/BubBubSubs/bubbubsubs.github.io
           token: ${{ secrets.BUB_BUB_DEPLOY}}
           path: pages
       - name: copy and deploy
