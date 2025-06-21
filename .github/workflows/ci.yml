@@ -22,7 +22,7 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - name: Build local ./exampleSite
+      - name: Build local site
         run: hugo --minify --gc --destination ./public --source . --themesDir ./themes --baseURL https://bubbubsubs.github.io
 
       - name: Deploy to GitHub Pages
