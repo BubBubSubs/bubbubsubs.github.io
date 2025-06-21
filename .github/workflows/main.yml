@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: brokengadgets/brokengadgets.github.io
-          token: ${{ secrets.HUGO_PAT }}
+          token: ${{ secrets.BUB_BUB_DEPLOY}}
           path: pages
       - name: copy and deploy
         run: |
