@@ -23,7 +23,7 @@ jobs:
       - name: Checkout pages
         uses: actions/checkout@v4
         with:
-          repository: github.com/BubBubSubs/bubbubsubs.github.io
+          repository: BubBubSubs/bubbubsubs.github.io
           token: ${{ secrets.BUB_BUB_DEPLOY}}
           path: pages
       - name: copy and deploy
